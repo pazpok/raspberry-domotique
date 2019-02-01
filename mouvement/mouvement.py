@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 from Led import Led
+from Buzzer import Buzzer
 
 # //Initialisation de notre GPIO 17 pour recevoir un signal
 # //Contrairement à nos LEDs avec lesquelles on envoyait un signal
@@ -15,6 +16,7 @@ previousstate = 0
 
 lightblue = Led(24)
 lightred = Led(18)
+buzzer = Buzzer(22)
 
 # Boucle infini jusqu'à CTRL-C
 while True:
@@ -25,6 +27,7 @@ while True:
         print("Mouvement detecte!")
         lightblue.on()
         lightred.off()
+        buzzer.on()
         # En enregistrer l'état
         previousstate = 1
     # Si le capteur est s'est stabilisé
@@ -32,6 +35,7 @@ while True:
         print("Pret")
         lightblue.off()
         lightred.on()
+        buzzer.off()
         previousstate = 0
     # On attends 10ms
     time.sleep(0.01)

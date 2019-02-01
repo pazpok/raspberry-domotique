@@ -1,0 +1,20 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Led</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<h1>Led</h1>
+<nav>
+    <ul>
+        <li><a class=bbon href="/bleu/on">Led Bleu allumé</a></li>
+        <li><a class=bboff href="/bleu/off">Led Bleu éteinte</a></li>
+        <li><a class=bron href="/rouge/on">Led Rouge allumé</a></li>
+        <li><a class=broff href="/rouge/off">Led Rouge éteinte</a></li>
+    </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}
+    HAPPY WELCOME HAPPY WELCOME HAPPY WELCOME
+  {% endblock %}
+</section>

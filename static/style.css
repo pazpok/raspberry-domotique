@@ -1,0 +1,96 @@
+.bbon {
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 119, 175);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(51, 119, 175);
+    transition: background-color 300ms ease-out;
+
+}
+
+.bbon:hover {
+    background-color: rgb(51, 119, 175);
+    color: rgb(255, 255, 255);
+}
+
+.bboff {
+    background-color: rgb(51, 119, 175);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(51, 119, 175);
+    transition: background-color 300ms ease-out;
+
+}
+
+.bboff:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 119, 175);
+}
+
+.bron {
+    background-color: rgb(255, 255, 255);
+    color: rgb(207, 66, 66);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 66, 66);
+    transition: background-color 300ms ease-out;
+
+}
+
+.bron:hover {
+    background-color: rgb(207, 66, 66);
+    color: rgb(255, 255, 255);
+}
+
+.broff {
+    background-color: rgb(207, 66, 66);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 66, 66);
+    transition: background-color 300ms ease-out;
+
+}
+
+.broff:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(207, 66, 66);
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}

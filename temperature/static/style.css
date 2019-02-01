@@ -63,8 +63,8 @@ body { background: #f2f2f2; }
     text-align: center;
 }
 .deneme span { font-size: 30px; font-weight: 200; }
-.deneme strong { position: absolute; right: 45px; top: 25px; font-size: 34px; }
-.far { font-size: 0.7em; }
+.deneme strong { position: absolute; right: 40px; top: 25px; font-size: 34px; }
+.far { font-size: 0.4em; }
 
 .bbon {
     background-color: rgb(255, 255, 255);

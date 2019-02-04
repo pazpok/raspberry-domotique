@@ -13,4 +13,8 @@ $(function () {
     	$('#status').text('Connecté');
         $('#content').append(data + "<br />");
 	});
+
+	socket.on('temp', function (data) {
+	$('.deneme').text(data);
+	});
 });

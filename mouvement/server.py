@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask_socketio import SocketIO, send, emit
 from mouvement import Mouvement
+from TemperatureSensor import TemperatureSensor
 import time
 import threading
 
@@ -26,5 +27,10 @@ def index():
 #read_messages.start()
 
 mouvement = Mouvement(17)
+temp_c = TemperatureSensor()
+
 read_mouvement = threading.Thread(target=mouvement.mouvement_loop,args=(socketio,))
 read_mouvement.start()
+
+read_temperature = threading.Thread(target=temp_c.temperature_loop,args=(socketio,))
+read_temperature.start()

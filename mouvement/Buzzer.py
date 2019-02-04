@@ -13,7 +13,9 @@ class Buzzer():
 
     def on(self):
         GPIO.output(self.broche, GPIO.HIGH)
-        time.sleep(0.5)
-
-    def off(self):
+        time.sleep(0.2)
         GPIO.output(self.broche, GPIO.LOW)
+
+#    def off(self):
+#        GPIO.output(self.broche, GPIO.LOW)
+

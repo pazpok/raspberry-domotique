@@ -14,9 +14,11 @@ class Led():
 
     def on(self):
         GPIO.output(self.broche, GPIO.HIGH)
-
-    def off(self):
+        time.sleep(1)
         GPIO.output(self.broche, GPIO.LOW)
+
+    #def off(self):
+     #   GPIO.output(self.broche, GPIO.LOW)
 
     def blink(self):
         i = 0
@@ -26,3 +28,4 @@ class Led():
             GPIO.output(self.broche, GPIO.LOW)
             time.sleep(1)
             i = i + 1
+

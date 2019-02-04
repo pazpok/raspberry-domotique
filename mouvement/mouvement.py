@@ -28,6 +28,7 @@ while True:
         lightblue.on()
         lightred.off()
         buzzer.on()
+	timesleep(0.5)
         # En enregistrer l'état
         previousstate = 1
     # Si le capteur est s'est stabilisé
@@ -35,6 +36,7 @@ while True:
         print("Pret")
         lightblue.off()
         lightred.on()
+	timesleep(1)
         buzzer.off()
         previousstate = 0
     # On attends 10ms

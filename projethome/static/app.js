@@ -12,12 +12,7 @@ $(function () {
     });
 
     socket.on('alert', function (data) {
-        $('#status').text('Connecté');
-        $('#content').append(data + "<br />");
-    });
-
-    socket.on('temp', function (data) {
-        $('.deneme').text(data);
+        $('.house-window').classList.add(data);
     });
 });
 

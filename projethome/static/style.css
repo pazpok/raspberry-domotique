@@ -5162,6 +5162,34 @@ html {
     box-shadow: 0 5px #e1eaff;
 }
 
+.house-window-red {
+    height: 60px;
+    width: 30px;
+    border: 5px solid #224889;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-image: linear-gradient(to right, #f53e3e, #f53e3e 49.9%, #f53e3e 50%, #f53e3e);
+}
+
+.house-window-red:before {
+    height: 100%;
+    width: 5px;
+    left: calc(50% - 2.5px);
+    top: 0;
+    background-color: #f53e3e;
+}
+
+.house-window-red:after {
+    height: 15px;
+    width: calc(100% + 20px);
+    left: -10px;
+    bottom: 5px;
+    border-radius: 15px;
+    background-color: #f53e3e;
+    border: 5px solid #224889;
+    box-shadow: 0 5px #e1eaff;
+}
+
 .house-doorway {
     width: 65px;
     height: 90px;

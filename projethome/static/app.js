@@ -12,7 +12,11 @@ $(function () {
     });
 
     socket.on('alert', function (data) {
-        $('.house-window').classList.add(data);
+        if (data == '1') {
+            $('.house-window').addClass('house-window-red');
+        }else {
+            $('.house-window').removeClass('house-window-red');
+        }
     });
 });
 

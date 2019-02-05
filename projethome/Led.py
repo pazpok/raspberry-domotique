@@ -29,6 +29,6 @@ class Led():
             i = i + 1
 
     def light_blink(self):
-        blinklr = threading.Thread(target=self.blink())
+        blinklr = threading.Thread(target=self.blink)
         blinklr.start()
 

@@ -29,6 +29,6 @@ class Buzzer():
             i = i + 1
 
     def buzzer_blink(self):
-        blinkbz = threading.Thread(target=self.blink())
+        blinkbz = threading.Thread(target=self.blink)
         blinkbz.start()
 

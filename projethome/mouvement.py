@@ -22,18 +22,18 @@ class Mouvement():
     def mouvement_loop(self, socketio):
         currentstate = 0
         previousstate = 0
+        lightblue.on()
         while True:
             currentstate = GPIO.input(self.broche)
-            previousstate = 0
-            lightblue.on()
             if currentstate == 1 and previousstate == 0:
+                previousstate = 1
                 lightblue.off()
                 lightred.light_blink()
+                socketio.emit('alert', '1', Broadcast=True)
                 buzzer.buzzer_blink()
-                socketio.emit('alert', 'house-window-red', Broadcast=True)
-                previousstate = 1
             elif currentstate == 0 and previousstate == 1:
-                socketio.emit('alert', '', Broadcast=True)
+                socketio.emit('alert', '0', Broadcast=True)
                 previousstate = 0
+                print('test')
             time.sleep(0.01)
 
